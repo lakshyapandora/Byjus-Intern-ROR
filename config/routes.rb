@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  #root "articles#index"
+  root "articles#index"
+  devise_for :users
+
   #get "/articles", to: "articles#index"
   #get "/introduction", to: "intros#lakshya"
   #get "/articles/:id", to: "articles#show"
