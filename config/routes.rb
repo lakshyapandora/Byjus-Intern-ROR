@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  root "articles#index"
+  get "/travel", to: "traver_planner#index"
+  get '/search' => 'traver_planner#search'
+
   devise_for :users
 
   #get "/articles", to: "articles#index"
